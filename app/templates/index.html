@@ -1,0 +1,86 @@
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+<link href="https://fonts.googleapis.com/css?family=Kalam&display=swap" rel="stylesheet">
+
+{% extends 'base.html'%}
+{% import 'macros.html' as macro %}
+
+<!-- Styles block -->
+
+{% block styles%}
+    {{ super() }}
+    <link rel="stylesheet" href="{{url_for('static',filename='css/index.css')}}">
+{% endblock %}
+
+{% block content %}
+
+<div class="row">
+    <div style ="overflow-y: scroll; height: 900px"class="col-md-4">
+        <!-- homepage section -->
+<div class="jumbotron">
+        <div class="row" id="general">
+            <div class="category col-md-12">
+                <h2 class="source_title">General News</h2>
+                <ul>
+                    {{macro.displayNewsourceList(general)}}
+                </ul>
+            </div>
+        </div>
+    </div>
+
+    </div>
+    <div class="col-md-4" style ="overflow-y: scroll; height: 900px">
+            <div class="row jumbotron" id="business">
+                    <div class="category col-md-12">
+                        <h2 class="source_title">Business</h2>
+                        <ul>
+                            {{macro.displayNewsourceList(business)}}
+                        </ul>
+                    </div>
+                </div>
+    </div>
+    <div class="col-md-4"style ="overflow-y: scroll; height: 900px">
+            <div class="row jumbotron" id="technology">
+                    <div class="category col-md-12">
+                        <h2 class="source_title">Technology</h2>
+                        <ul>
+                            {{macro.displayNewsourceList(technology)}}
+                        </ul>
+                    </div>
+                </div>
+    </div>
+</div>
+<div class="row">
+    <div class="col-md-4"style ="overflow-y: scroll; height: 900px">
+            <div class="row jumbotron" id="sports">
+                    <div class="category col-md-12">
+                        <h2 class="source_title">Sports</h2>
+                        <ul>
+                            {{macro.displayNewsourceList(sports)}}
+                        </ul>
+                    </div>
+                </div>
+    </div>
+    <div class="col-md-4"style ="overflow-y: scroll; height: 900px">
+            <div class="row jumbotron" id="entertainment">
+                    <div class="category col-md-12">
+                        <h2 class="source_title">Entertainment</h2>
+                        <ul>
+                            {{macro.displayNewsourceList(entertainment)}}
+                        </ul>
+                    </div>
+                </div>
+    </div>
+    <div class="col-md-4"style ="overflow-y: scroll; height: 900px">
+            <div class="row jumbotron" id="science">
+                    <div class="category col-md-12">
+                        <h2 class="source_title">Science</h2>
+                        <ul>
+                            {{macro.displayNewsourceList(science)}}
+                        </ul>
+                    </div>
+                </div>
+                </div>
+    </div>
+</div>
+{% endblock%}
+
