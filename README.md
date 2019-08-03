@@ -1,5 +1,5 @@
 # Project Name
-- 24News
+- gnomenews
 
 #Project Author
 - Daniel Muthui
