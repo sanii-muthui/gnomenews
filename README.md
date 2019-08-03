@@ -13,7 +13,7 @@ news from wherever they are by accessing the url link. A user can search for lat
 - Use the url sanii-muthui/github.io/24news to access the site
 - You can also clone
 ### Prerequisites
-* python3.7
+* python3.6
 * pip3
 * Virtual environment(virtualenv)
 * javascript 
@@ -25,15 +25,15 @@ Clone the application using git clone and open your terminal and clone the app t
 
 ## Creating the virtual environment
 
-  *  $ python3.7 -m venv --without-pip virtual
+  *  $ python3.6 -m venv --without-pip virtual
   *  $ source virtual/bin/env
   *  $ curl https://bootstrap.pypa.io/get-pip.py | python
 
 ## Installing Flask and other Modules
 
-  *  $ python3.7 -m pip install Flask
-  *  $ python3.7 -m pip install Flask-Bootstrap
-  *  $ python3.7 -m pip install Flask-Script
+  *  $ python3.6 -m pip install Flask
+  *  $ python3.6 -m pip install Flask-Bootstrap
+  *  $ python3.6 -m pip install Flask-Script
 
 ## Setting up the API Key
 
@@ -42,7 +42,7 @@ Clone the application using git clone and open your terminal and clone the app t
 * Visit https://newsapi.org/ and register for an API key.
 
 ## Technologies Used
-* Python 3.7
+* Python 3.6
 * Flask
 * Bootsrap
 
